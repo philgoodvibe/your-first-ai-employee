@@ -1,39 +1,81 @@
-# Your First AI Employee — Course Companion Repo
+# Your First AI Employee - Course Companion Repo
 
-This repo is the companion to **Your First AI Employee**, the AIAI Mastermind foundation course that teaches business owners to hire, onboard, train, and dispatch their first AI employee — a Chief of Staff — using Claude Desktop.
+This repo is the companion to **Your First AI Employee**, the AIAI Mastermind foundation course that teaches established business owners to hire, onboard, train, and dispatch their first AI employee: a Chief of Staff.
 
-## What's in here
+You are not learning Claude Code. Claude Code is the classroom. The structure is the asset.
 
-- `skill/your-first-ai-employee.skill.md` — the course companion skill. Install this in Claude Desktop and your AI employee can help you through the course (say *"I'm on Module 4, help me"* and your employee knows where you are).
-- `templates/CLAUDE.md` — the standing instructions you'll give your AI employee (their employment contract).
-- `templates/AGENTS.md` — the org chart of sub-roles your Chief of Staff can spawn (Researcher, Copywriter, Designer, Strategist, Editor). `AGENTS.md` is now an open cross-vendor standard, so the same file works in Codex Desktop, Cursor, and other tools.
-- `templates/context-folder/` — the starter folder structure for the business intelligence you'll feed your employee.
-- `templates/mission-1-niche-sprint-brief.md` — the brief you'll give your employee in Module 4.
-- `templates/mission-2-launch-kit-brief.md` — the brief you'll give your employee in Module 5.
-- `troubleshooting/common-gotchas.md` — when something breaks, look here first.
-- `references/cli-vs-desktop-vs-ide.md` — side-by-side comparison of running Claude Code through the desktop app vs the CLI vs an IDE extension. The course teaches Desktop; this doc tells you when (if ever) to consider the others.
+The durable structure you build here can move to Claude, Codex, OpenClaw, Cursor, or whatever serious AI work surface becomes best later.
 
-## How to use this repo
+## What You Build In The Course
 
-You don't clone it manually. You ask your AI employee to fetch it for you:
+By the end of the course, you have:
 
-> *"Sign in to GitHub through Claude Desktop's Connectors panel, connect this repository: github.com/aiai-mastermind/your-first-ai-employee. Then use the filesystem MCP to copy the templates folder and the troubleshooting folder into our working directory. Confirm when done."*
+- A named AI Chief of Staff
+- A working folder
+- Business context organized for AI
+- Standing instructions
+- An AI org chart
+- A verified course skill
+- A Social and SEO Strategy Plan
+- An AI Employee Roadmap
 
-Your employee handles the rest. (The course walks you through this in Module 2 — you don't need to figure it out yourself.)
+## What's In This Repo
 
-## Prerequisites for the course
+- `skill/your-first-ai-employee.skill.md` - the course companion skill. Install or enable this in Claude Desktop so your Chief of Staff can help you through the course.
+- `templates/CLAUDE.md` - the standing instructions for your Chief of Staff.
+- `templates/AGENTS.md` - the org chart of AI employees and sub-roles your Chief of Staff can coordinate.
+- `templates/context-folder/` - the starter folder structure for the business context you will feed your employee.
+- `templates/mission-1-social-seo-strategy-brief.md` - the Mission 1 brief for your Social and SEO Strategy Plan.
+- `templates/mission-2-ai-employee-roadmap-brief.md` - the Mission 2 brief for your AI Employee Roadmap.
+- `troubleshooting/common-gotchas.md` - common setup and workflow problems.
+- `references/cli-vs-desktop-vs-ide.md` - a practical comparison of desktop, CLI, and IDE workflows.
 
-- **Paid Claude plan.** We recommend starting with **Max at $100/month**. Pricing for Claude Code is in flux — Anthropic has been going back and forth between making it available on Pro ($20/mo) and gating it behind Max. Max is the stable bet. The free tier won't work; Claude Code lives in the Code tab which is paid-tier only.
-- **GitHub account** — free. The course walks you through signup if you don't have one.
-- **Mac or Windows** — Mac is the recommended path. Windows works with light extra setup.
-- ~30 minutes of business material to feed your employee during onboarding (about-us copy, sales pages, examples of your writing, etc.).
+## How To Use This Repo
 
-## Course location
+You do not need to clone it manually.
 
-The full course (videos + walkthroughs + companion docs) lives at: [INSERT COURSE PLATFORM URL — to be added when course is hosted].
+Ask your Chief of Staff to fetch it for you:
 
-## Questions?
+```text
+Use the GitHub connector to fetch the course materials for Your First AI Employee from github.com/philgoodvibe/your-first-ai-employee. Copy the skill, templates, references, troubleshooting, and context-folder structure into this working folder. When you are done, list what you copied.
+```
+
+Your Chief of Staff handles the rest. The course walks you through this in Module 2.
+
+## Prerequisites For The Course
+
+- **Claude plan with the Code work surface.** Pricing and plan names can change, so confirm current access before launch or if you hit an upgrade prompt.
+- **GitHub account.** Free is fine.
+- **Mac or Windows computer.** Mac is the recommended path. Windows works with some extra setup.
+- **Business material.** Bring sales pages, website copy, offers, customer FAQs, testimonials, past posts, newsletters, call notes, and anything else that helps your Chief of Staff understand the business.
+
+## The Two Missions
+
+Mission 1 creates a **Social and SEO Strategy Plan**.
+
+Mission 2 creates an **AI Employee Roadmap**.
+
+These missions are not magic prompts. They teach you how to brief an AI employee like a capable human teammate.
+
+The pattern is:
+
+1. Outcome
+2. Context
+3. Why it matters
+4. Quality bar
+5. Guardrails
+6. Clarify-or-go instruction
+
+## Course Location
+
+The full course will live at:
+
+```text
+[INSERT COURSE PLATFORM URL]
+```
+
+## Questions
 
 Open a GitHub Issue or post in the AIAI Mastermind community.
 
-— AIAI Mastermind / Insight To Impact LLC
+AIAI Mastermind / Insight To Impact LLC

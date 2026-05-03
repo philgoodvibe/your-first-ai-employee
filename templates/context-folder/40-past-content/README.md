@@ -1,6 +1,6 @@
-# Past Content — [BUSINESS NAME]
+# Past Content - [BUSINESS NAME]
 
-> **Drop into this folder:** examples of YOUR voice in YOUR writing. Blog posts, newsletter archives, social posts you wrote (not your VA — you), podcast/keynote transcripts, sales emails you've written, voice memos riffing on topics.
+> **Drop into this folder:** examples of YOUR voice in YOUR writing. Blog posts, newsletter archives, social posts you wrote, podcast transcripts, keynote transcripts, sales emails, and voice memos riffing on topics.
 
 This is the most important folder for getting your AI employee to sound like YOU instead of like AI.
 

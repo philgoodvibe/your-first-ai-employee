@@ -1,4 +1,4 @@
-# Products & Services — [BUSINESS NAME]
+# Products & Services - [BUSINESS NAME]
 
 > **Drop into this folder:** sales pages, pricing PDFs, product specs, service agreements, FAQ docs, comparison tables, value-prop write-ups. Everything that explains what we sell.
 

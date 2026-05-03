@@ -1,4 +1,4 @@
-# Business Overview — [BUSINESS NAME]
+# Business Overview - [BUSINESS NAME]
 
 > **Note:** This is the canonical "About Us" doc your AI employee will read at the start of every conversation. Fill in every section. Be specific. Vague answers produce vague output.
 
@@ -10,7 +10,7 @@ We help [WHO] achieve [WHAT OUTCOME] without [WHAT FRICTION].
 
 ## Who we serve (current customer)
 
-Describe the customer we serve today — not who we wish we served, who we actually serve. Industry, role, size, key concerns.
+Describe the customer we serve today. Not who we wish we served, who we actually serve. Include industry, role, size, and key concerns.
 
 ## What we sell
 

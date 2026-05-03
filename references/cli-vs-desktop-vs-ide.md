@@ -1,10 +1,10 @@
-# Where to run Claude Code: CLI vs Desktop vs IDE
+# Where To Run Claude Code: CLI vs Desktop vs IDE
 
 > **Audience:** business owners who finished "Your First AI Employee" and want to know if they should ever leave Claude Desktop. **Last verified:** 2026-04-29. UIs and feature gaps shift fast, so when something here doesn't match what you see, ask your AI employee: *"Run the research-and-discernment routine on [specific question]."*
 
 The course teaches Claude Code through Claude Desktop because it's the lowest-friction path for non-technical business owners. But Claude Code also runs as a command-line interface (CLI) and as an extension inside developer IDEs like Visual Studio Code, JetBrains, and Cursor. Each surface has the same brain underneath. The difference is the body.
 
-Here's a side-by-side so you know which surface fits which job.
+Here is a side-by-side so you know which surface fits which job.
 
 ---
 
@@ -29,15 +29,15 @@ Here's a side-by-side so you know which surface fits which job.
 
 ### Start with Claude Desktop. Always.
 
-If you're new, on the non-technical end of the audience, or running the kinds of missions this course teaches (niche research, launch kit, content production, strategy briefs), the desktop app is the only surface you need. The Code tab gives you everything: the agent, the plugins, the MCP ecosystem, the file system access, the visual feedback that makes it obvious when something's working vs when it isn't.
+If you are running the kinds of missions this course teaches, the desktop app is the only surface you need. The Code tab gives you everything: the agent, the course skill, the connector ecosystem, the file system access, and the visual feedback that makes it obvious when something is working versus when it is not.
 
-The desktop app is also the safest place to learn. You won't accidentally break a permission setting in a config file. You won't drop into a terminal and feel stupid. You see what's happening.
+The desktop app is also the safest place to learn. You see what is happening, and you do not need to manage configuration files just to brief a mission.
 
 ### Move to the CLI only if you have a specific reason.
 
 The CLI shines for **automation, repetition, and scale**. If you find yourself running the same brief on 30 different project folders, the CLI lets you script that. If you want Claude to run on a schedule (every morning at 7am, summarize new emails), the CLI is what you wire into a cron job. If you're building Claude into a CI/CD pipeline so it reviews pull requests on every commit, the CLI is what your pipeline calls.
 
-For 95% of business owners, none of those use cases apply. **You don't need the CLI.** Anyone who tells you "real users use the CLI" is performing technical credentials, not giving useful advice. The desktop app does what you need.
+For most business owners, none of those use cases apply. **You do not need the CLI.** The desktop app does what you need.
 
 If you ever DO need it, the CLI is a 30-minute setup once you're comfortable with the desktop app concepts. You already know what a brief looks like, what a sub-agent does, what a plugin adds, what an MCP unlocks. The CLI is just the same thing without the visual frame.
 
@@ -45,7 +45,7 @@ If you ever DO need it, the CLI is a 30-minute setup once you're comfortable wit
 
 If you're a developer who has Visual Studio Code or Cursor open eight hours a day and you just want Claude to read and edit code in the file you're already looking at, the IDE extension makes sense. It saves you the context switch between editor and Claude Desktop.
 
-But if you don't write code regularly, the IDE extension is overkill. You'll be installing a developer tool to do executive work. The desktop app is the right scale for what you're doing.
+But if you do not write code regularly, the IDE extension is overkill. You would be installing a developer tool to do executive work. The desktop app is the right scale for what you are doing.
 
 The one exception: if you're using Cursor as your daily editor (Cursor markets itself as an "AI-first IDE"), Claude Code integration is built in and feels native. Worth trying if you're already there. But don't switch to Cursor just to run Claude. Use Desktop.
 

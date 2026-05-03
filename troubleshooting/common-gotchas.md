@@ -1,4 +1,4 @@
-# Common Gotchas — Symptom → Fix Lookup
+# Common Gotchas - Symptom To Fix Lookup
 
 > **How to use this doc:** Find your symptom in the table of contents below. Read the "Tell Claude this prompt" line. Paste it. Done.
 >
@@ -15,7 +15,7 @@
 - [Permission gotchas (Mac and Windows)](#permission-gotchas)
 - [Account / subscription gotchas](#account--subscription-gotchas)
 - [Tab / mode gotchas](#tab--mode-gotchas)
-- [Plugin install gotchas](#plugin-install-gotchas)
+- [Skill verification gotchas](#skill-verification-gotchas)
 - [GitHub gotchas](#github-gotchas)
 - [File path / iCloud gotchas](#file-path--icloud-gotchas)
 - [Conversation / context gotchas](#conversation--context-gotchas)
@@ -27,16 +27,16 @@
 
 These are the gotchas most likely to make you quit. If something feels broken, check these first.
 
-1. **You're in the wrong tab.** The Code tab is where everything in this course happens — not Chat, not Cowork. If `/plugin` doesn't autocomplete, click "Code" at the top center.
+1. **You're in the wrong tab.** The Code tab is where everything in this course happens. Not Chat, not Cowork. Click "Code" at the top center.
 2. **You're on the Free tier.** The Code tab requires a paid plan. If you click Code and see an upgrade prompt, we recommend starting with Max at $100/month (Claude Code pricing is in flux; Max is the stable bet).
-3. **Plugin install fakes success in Chat tab.** Always verify by typing `/` after install — you should see `/superpowers:*` skills. If you don't, the install was fake.
+3. **Skill verification is not optional.** Always ask your Chief of Staff to prove the course skill is active. "Done" is not proof.
 4. **GitHub 2FA is mandatory** as of May 2, 2026. Install GitHub Mobile on your phone before signup.
 5. **macOS clicked "Don't Allow" on a folder permission.** Restart Claude. When prompted again, click Allow.
 6. **Windows is missing Git for Windows.** The Code tab silently fails without it. Install from git-scm.com/downloads/win and restart Claude.
 7. **The GitHub CAPTCHA escalated on failure.** Refresh the page. If it persists, use "Continue with Google."
 8. **Verification email is in Promotions/Junk.** Check those folders before clicking "resend."
 9. **You're using `CLAUDE.md` in Codex (or `AGENTS.md` in Claude).** Each tool reads a specific filename. Keep both files in sync, or copy one to the other when you switch tools.
-10. **Conversation got too long.** Start a new chat. Tell the new chat: *"Read CLAUDE.md and the context folder, then catch up on where I am — I just hit a context limit."*
+10. **Conversation got too long.** Start a new chat. Tell the new chat: *"Read CLAUDE.md, AGENTS.md, the context folder, and the current mission folder. Then catch up on where I am because I just hit a context limit."*
 
 ---
 
@@ -55,7 +55,7 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 - **OS:** Windows
 
 ### Windows Code tab silently fails without Git for Windows
-- **Symptom:** Open the Code tab on Windows, pick a folder, send first message — session never starts or errors with non-obvious text.
+- **Symptom:** Open the Code tab on Windows, pick a folder, send first message. The session never starts or errors with non-obvious text.
 - **Root cause:** Code tab requires `git` on PATH. macOS ships it; Windows does not.
 - **Fix (before opening Code tab on Windows):** Install Git for Windows from `https://git-scm.com/downloads/win`. Restart Claude. Required, not optional.
 - **OS:** Windows
@@ -63,7 +63,7 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 ### MSIX vs .exe Windows installer confusion
 - **Symptom:** You found an `.msix` installer and got "Add-AppxPackage" PowerShell errors.
 - **Root cause:** Two valid Windows downloads exist; the consumer `.exe` is what you want.
-- **Fix:** Use the consumer Windows installer (.exe Setup) from `claude.com/download` — not the .msix enterprise package.
+- **Fix:** Use the consumer Windows installer (.exe Setup) from `claude.com/download`, not the .msix enterprise package.
 - **OS:** Windows
 
 ### Linux is not supported
@@ -98,7 +98,7 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 ### Permission prompts during fetch get "Deny" by reflex
 - **Symptom:** You clicked Deny on the "Allow Claude to run X" prompt; Claude reports a fetch failure.
 - **Root cause:** Non-technical instinct is to deny prompts as suspicious.
-- **Fix:** Click Allow for every command Claude asks about during the GitHub fetch. You're approving Claude to do work *on your behalf*, not granting blanket access. To redo: tell Claude *"Try the fetch again — I'll click Allow this time."*
+- **Fix:** Click Allow for every command Claude asks about during the GitHub fetch. You're approving Claude to do work on your behalf, not granting blanket access. To redo, tell Claude: *"Try the fetch again. I will click Allow this time."*
 - **OS:** both
 
 ---
@@ -108,7 +108,7 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 ### Free tier blocks the Code tab (THE big one)
 - **Symptom:** Click Code tab → see an upgrade-to-Pro prompt instead of a folder picker.
 - **Root cause:** Code tab is Pro+ only. The whole course lives in the Code tab.
-- **Fix (before Module 3 starts):** Open Settings (⌘, on Mac, Ctrl+, on Windows). Confirm a paid badge (Pro, Max, or Team Premium) in your Account section. If you see "Free," upgrade now. We recommend Max at $100/month — Anthropic has been flipping Claude Code between Pro ($20/mo) and Max ($100/mo) tiers, so Max is the stable bet that won't surprise you mid-course.
+- **Fix:** Open Settings. Confirm a paid badge in your Account section. If you see "Free," upgrade to a plan that includes the Code work surface. Pricing and plan names change, so ask your Chief of Staff to verify the current access requirements if needed.
 - **OS:** both
 
 ### Sign-in tokens expire silently
@@ -133,11 +133,11 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 - **Fix:** Look at the top center: you want the **Code** tab highlighted for everything in this course. The first thing you do every session is click "Code."
 - **OS:** both
 
-### Chat tab fakes plugin install success
-- **Symptom:** In Chat tab: *"Install Superpowers"* → Claude says "Installed!" — but slash menu doesn't show `/superpowers:*` skills.
-- **Root cause:** `/plugin` is a Code-tab/CLI feature. In Chat tab, Claude hallucinates success. (Confirmed bug `anthropics/claude-code#42142`.)
-- **Tell Claude this (after switching tabs):** *"List the slash commands now available in this session that begin with /superpowers:. If none appear, the install did not take."*
-- **Fix:** Always switch to the Code tab before any plugin work. Verify by typing `/` after install.
+### Chat tab gives generic course answers
+- **Symptom:** In Chat tab, Claude says it understands the course but cannot inspect your files or prove the skill is active.
+- **Root cause:** Chat is conversation. Code is where your Chief of Staff can work with the folder.
+- **Tell Claude this after switching tabs:** *"Inspect this working folder and confirm whether the course skill exists at skill/your-first-ai-employee.skill.md. Then summarize what Module 4 asks me to verify."*
+- **Fix:** Always switch to the Code tab before file, folder, or course-skill work.
 - **OS:** both
 
 ### Plugins don't sync to Cowork or Remote sessions
@@ -148,26 +148,26 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 
 ---
 
-## Plugin install gotchas
+## Skill Verification Gotchas
 
-### "Did the install actually work?" — three signals
-- **Tell Claude this:** *"Show me three signals that the plugin is active: (1) the slash autocomplete entries it added, (2) the /plugin Installed-tab status, (3) the output of /help."*
-- This is the trust-building verification you should do after every plugin install.
+### "Did the course skill actually work?" - three signals
+- **Tell Claude this:** *"Show me proof that the course skill is active. Tell me where the skill file is, what Module 5 produces, and what briefing pattern I should use."*
+- This is the trust-building verification you should do before Mission 1.
 
-### GSD requires two commands (third-party marketplace)
-- **Symptom:** Asked to install GSD and got "plugin not found."
-- **Root cause:** GSD lives in `jnuyens/gsd-plugin`, a community marketplace not pre-added.
-- **Tell Claude this:** *"Please add the GSD plugin marketplace from jnuyens/gsd-plugin and then install the gsd plugin for me."*
+### Course skill file is missing
+- **Symptom:** Claude cannot find `skill/your-first-ai-employee.skill.md`.
+- **Root cause:** The GitHub fetch did not copy the skill folder into your working folder.
+- **Tell Claude this:** *"Use the GitHub connector to fetch github.com/philgoodvibe/your-first-ai-employee again. Copy the skill folder into this working folder and confirm the absolute path of your-first-ai-employee.skill.md."*
 - **OS:** both
 
-### `/reload-plugins` required to activate new skills
-- **Symptom:** Install succeeded but `/superpowers:*` skills don't appear in autocomplete.
-- **Root cause:** Slash menu cache stale until reload.
-- **Tell Claude this:** *"Run /reload-plugins and then list the new slash commands available."*
+### Skill exists but Claude ignores it
+- **Symptom:** The skill file exists, but Claude gives generic answers about the course.
+- **Root cause:** Claude may not have read the skill file or may be in the wrong folder.
+- **Tell Claude this:** *"Read skill/your-first-ai-employee.skill.md now. Then tell me the six course modules and what folder Mission 1 should create."*
 - **OS:** both
 
 ### Don't use `--dangerously-skip-permissions`
-- **Warning:** If a tutorial tells you to add `--dangerously-skip-permissions`, ignore it. The Code tab handles permissions correctly without it. The flag disables ALL permission prompts globally — catastrophic for non-technical users.
+- **Warning:** If a tutorial tells you to add `--dangerously-skip-permissions`, ignore it. The Code tab handles permissions correctly without it. The flag disables all permission prompts globally.
 - **OS:** both
 
 ---
@@ -177,32 +177,32 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 ### 2FA mandatory at signup (post-May 2, 2026)
 - **Symptom:** Sign up, get forced through 2FA before reaching the dashboard.
 - **Root cause:** GitHub enforcement extends to all new accounts.
-- **Fix:** Install the **GitHub Mobile** app on your phone before Module 1. Scan QR code, tap "Approve." Don't use SMS — GitHub is phasing it out. Save your recovery codes somewhere safe (note in 1Password, screenshot in Photos, etc.).
+- **Fix:** Install the **GitHub Mobile** app on your phone before Module 1. Scan QR code, tap "Approve." Do not use SMS because GitHub is phasing it out. Save your recovery codes somewhere safe.
 - **OS:** both
 
 ### Arkose CAPTCHA rage-quit
 - **Symptom:** Fail the rotate-the-image puzzle, get a stricter version, fail again, want to throw the laptop.
 - **Root cause:** Arkose escalates difficulty on failure.
-- **Fix:** Refresh the page. If it keeps escalating, switch to "Continue with Google" — bypasses the puzzle entirely.
+- **Fix:** Refresh the page. If it keeps escalating, switch to "Continue with Google." That bypasses the puzzle entirely.
 - **OS:** both
 
 ### Verification email lands in Promotions/Junk
 - **Symptom:** Wait 5 minutes for the launch code; never arrives in primary inbox.
 - **Root cause:** Gmail Promotions tab; Outlook Junk folder; corporate spam filters.
-- **Fix:** Check Gmail's Promotions tab and Outlook's Junk folder. If still missing after 5 min, click "Resend code" — or switch to a personal Gmail address.
+- **Fix:** Check Gmail's Promotions tab and Outlook's Junk folder. If still missing after 5 min, click "Resend code" or switch to a personal Gmail address.
 - **OS:** both
 
 ### Native GitHub integration says "I can't access this repo"
 - **Symptom:** Claude reports it can't read the repo even after you signed in.
 - **Root cause:** You signed in but didn't connect this specific repository.
-- **Tell Claude this:** *"In Claude Desktop, open Settings → Connectors → GitHub → Connect repository. Walk me through adding github.com/aiai-mastermind/your-first-ai-employee."*
-- **Fix:** Settings → Connectors → GitHub → Connect repository, paste URL, authorize.
+- **Tell Claude this:** *"In Claude Desktop, open Settings, find GitHub under Connectors, and walk me through connecting github.com/philgoodvibe/your-first-ai-employee."*
+- **Fix:** Settings, Connectors, GitHub, connect repository, paste URL, authorize.
 - **OS:** both
 
 ### "Clone" vs "fetch" prompt phrasing
 - **Symptom:** Claude downloads files but they don't end up in your working folder.
 - **Root cause:** Without the right prompt, Claude may fetch file contents into the conversation instead of writing them to disk.
-- **Tell Claude this:** *"Use the filesystem MCP to copy the templates folder from the connected repo into our working directory at [path]. Don't just read the files into our chat — actually write them to disk. Confirm by listing what's now in the working folder."*
+- **Tell Claude this:** *"Use the filesystem tools to copy the templates folder from the connected repo into our working directory at [path]. Do not just read the files into our chat. Actually write them to disk. Confirm by listing what is now in the working folder."*
 - **OS:** both
 
 ---
@@ -215,7 +215,7 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 - **Fix:** Open Finder, navigate to your working directory. Look for the cloud icon next to file names. Right-click → "Download Now" to force local copies. Better: move the working directory to a non-iCloud location like `~/ai-employee/`.
 - **OS:** Mac
 
-### "I can't find the folder" — path confusion
+### "I can't find the folder" - path confusion
 - **Symptom:** Claude says it can't find a path you specified.
 - **Tell Claude this:** *"Show me the absolute path of the file you're looking for. Then list everything in the directory above that path. Help me figure out where the file actually is."*
 - **OS:** both
@@ -227,8 +227,8 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 ### Claude lost track mid-mission
 - **Symptom:** Mid-Mission 1 (or 2), Claude starts contradicting earlier work, forgets the brief, or asks for info you already gave.
 - **Root cause:** Conversation hit the context window limit.
-- **Tell Claude this (in a NEW chat):** *"Read CLAUDE.md, AGENTS.md, the context folder, and any files in 01-strategy/. Then catch up on where we are in Mission 1 — I had to start a new chat because the old one ran out of room. Pick up from where we left off."*
-- **Fix:** Periodically save progress as files (Claude can do this — *"Save a progress doc at progress.md summarizing what we've done and what's left"*). Then a new chat can resume.
+- **Tell Claude this in a new chat:** *"Read CLAUDE.md, AGENTS.md, the context folder, and any files in the current mission folder. Then catch up on where we are. I had to start a new chat because the old one ran out of room."*
+- **Fix:** Periodically save progress as files. Ask Claude: *"Save a progress doc at progress.md summarizing what we have done and what is left."* Then a new chat can resume.
 - **OS:** both
 
 ---
@@ -253,6 +253,6 @@ These are the gotchas most likely to make you quit. If something feels broken, c
 
 Claude is the help system. Tell your AI employee:
 
-> *"I'm on Module [X] of Your First AI Employee. I'm trying to [what you're trying to do]. What's happening is [exactly what you see — error message verbatim if there is one]. I tried [whatever you tried]. Help me figure out the next step."*
+> *"I'm on Module [X] of Your First AI Employee. I'm trying to [what you're trying to do]. What's happening is [exactly what I see, including the error message if there is one]. I tried [whatever I tried]. Help me figure out the next step."*
 
 That single prompt resolves 80% of unlisted issues.
