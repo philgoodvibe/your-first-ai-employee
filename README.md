@@ -29,6 +29,8 @@ By the end of the course, you have:
 - `templates/mission-2-ai-employee-roadmap-brief.md` - the Mission 2 brief for your AI Employee Roadmap.
 - `troubleshooting/common-gotchas.md` - common setup and workflow problems.
 - `references/cli-vs-desktop-vs-ide.md` - a practical comparison of desktop, CLI, and IDE workflows.
+- `delivery/Your-First-AI-Employee-Workbook.pdf` - the printable Operating Manual: cover, pre-flight, six modules with walkthroughs, missions, operating page, and a technical glossary.
+- `delivery/Your-First-AI-Employee-Operating-Card.pdf` - the one-page desk reference: brief structure, recovery prompts, and lock phrase.
 
 ## How To Use This Repo
 
